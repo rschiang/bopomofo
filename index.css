@@ -12,5 +12,19 @@ body {
 
 table {
     width: 100%;
+    line-height: 1.33em;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: 500;
+}
+
+td:not(:empty) {
+    text-align: center;
     border: 1px solid gray;
+}
+
+a:not(:active) {
+    text-decoration: none;
 }
