@@ -1,10 +1,15 @@
+@font-face {
+    font-family: 'Bopomofo Ruby';
+    src: url(vendor/bopomofo.ttf);
+}
+
 html {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: 'jf-jinxuan', 'Source Han Sans TC', sans-serif;
+    font-family: 'jf-jinxuan', 'Source Han Sans TC', Calibri, 'Gill Sans', 'Bopomofo Ruby', sans-serif;
     width: 100%;
     max-width: 45rem;
     margin: auto;
@@ -29,6 +34,24 @@ a:not(:active) {
     text-decoration: none;
 }
 
-sup {
+sup, sub {
     font-size: 0.67em;
+}
+
+rt {
+    font-size: 25%;
+    font-family: 'Bopomofo Ruby', 'jf-jinxuan', 'Source Han Sans TC', sans-serif;
+    text-orientation: upright;
+    font-feature-settings: 'salt';
+}
+
+footer {
+    margin: 2rem 0;
+    text-align: right;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+footer a:not(:active) {
+    color: inherit;
 }
