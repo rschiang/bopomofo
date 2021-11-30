@@ -28,3 +28,7 @@ td:not(:empty) {
 a:not(:active) {
     text-decoration: none;
 }
+
+sup {
+    font-size: 0.67em;
+}
