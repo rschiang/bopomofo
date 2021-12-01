@@ -38,11 +38,29 @@ sup, sub {
     font-size: 0.67em;
 }
 
+sup u {
+    display: inline-block;
+    transform: scaleX(0.75);
+    transform-origin: bottom left;
+    letter-spacing: -0.1em;
+}
+
 rt {
-    font-size: 25%;
+    font-size: 27.5%;
     font-family: 'Bopomofo Ruby', 'jf-jinxuan', 'Source Han Sans TC', sans-serif;
     text-orientation: upright;
     font-feature-settings: 'salt';
+}
+
+abbr {
+    text-decoration: none;
+}
+
+abbr::after {
+    content: '*';
+    font-size: 75%;
+    color: gray;
+    position: absolute;
 }
 
 footer {
